@@ -235,7 +235,7 @@ header {
 }
 .card {
   text-align: center;
-  height: 520px;
+  /* height: 520px; */
   border-radius: 20px;
   padding: 3rem 2rem;
   box-sizing: border-box;
@@ -461,4 +461,44 @@ header {
   /* width: 50%; */
   font-weight: light;
   color: #94a3b8;
+}
+
+@media (max-width: 1000px) {
+  .hero-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-description-container {
+    width: 100%;
+    text-align: center;
+  }
+  .description {
+    width: auto;
+  }
+  .hero-img-section {
+    width: 80%;
+  }
+  .features-grid1 {
+    grid-template-columns: 1fr;
+  }
+  .features-grid2 {
+    grid-template-columns: 1fr;
+  }
+  .img-circle {
+    width: 250px;
+    height: 250px;
+  }
+  .cta-description h1 {
+    font-size: 2.5rem;
+  }
+  .cta-description-container {
+    top: 30px;
+  }
+  .cards1 {
+    left: 2%;
+  }
+  .cards2 {
+    left: 25%;
+  }
 }

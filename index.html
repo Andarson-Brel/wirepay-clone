@@ -49,33 +49,9 @@
             </div>
           </div>
           <div class="hero-img-section">
-            <div class="outside-container">
-              <div class="inner-container">
-                <div class="main-container">
-                  <div class="border"></div>
-                  <div class="border-2"></div>
-                  <img
-                    src="./images/mobile-phone1.svg"
-                    class="mobile-1"
-                    alt=""
-                  />
-                  <img
-                    src="./images/mobile-phone2.svg"
-                    class="mobile-2"
-                    alt=""
-                  />
-                  <img
-                    src="./images/badge-blue.svg"
-                    alt=""
-                    class="badge-blue"
-                  />
-                  <img
-                    src="./images/badge-lock.svg"
-                    alt=""
-                    class="badge-lock"
-                  />
-                </div>
-              </div>
+
+<lottie-interactive path="animation/hero-section.json" autoplay>            <div class="outside-container">
+              
             </div>
           </div>
         </div>
@@ -97,7 +73,7 @@
           <div class="features-grid1">
             <div class="card card1">
               <div class="card-display">
-                <img src="./images/card-display1.svg" alt="" />
+                <lottie-interactive path="animation/send-container.json"  interaction="hover" loop class="send-container" id="sendContainer"></lottie-interactive>
               </div>
               <h1 class="card-heading">Fast Payments</h1>
               <p class="card-description">
@@ -116,7 +92,7 @@
             </div>
             <div class="card card3">
               <div class="card-display">
-                <img src="./images/card-display3.svg" alt="" />
+                <lottie-interactive path="animation/service-provider.json"  interaction="hover" class="service-provider" id="serviceProvider">
               </div>
               <h1 class="card-heading">Bill Payments</h1>
               <p class="card-description">
@@ -218,5 +194,33 @@
         © 2023 Maplerad Technologies Inc. All rights reserved.
       </p>
     </footer>
+
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/lottie-interactive@latest/dist/lottie-interactive.js"
+    ></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <script src="./script/app.js"></script>
+    <!-- <script>
+      LottieInteractivity.create({
+          player: "#serviceProvider",
+          mode:"cursor",
+          actions: [
+              {
+                  position: { x: [0, 1], y: [0, 1] },
+                  type: "loop",
+                  frames: [45, 60]
+              },
+              {
+                  position: { x: -1, y: -1 },
+                  type: 'stop',
+                  frames: [0],
+              }
+          ]
+      });
+      </script> -->
   </body>
 </html>

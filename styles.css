@@ -492,7 +492,11 @@ header {
   .cta-description h1 {
     font-size: 2.5rem;
   }
+  .card-display {
+    cursor: pointer;
+  }
   .cta-description-container {
+    flex-direction: column;
     top: 30px;
   }
   .cards1 {
@@ -501,4 +505,8 @@ header {
   .cards2 {
     left: 25%;
   }
+}
+.service-provider,
+.send-container {
+  cursor: pointer;
 }

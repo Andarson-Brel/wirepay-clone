@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -29,13 +30,16 @@
       <section class="hero-section">
         <div class="hero-inner">
           <div class="hero-description-container">
-            <p class="hero-section-heading">Your financial passport</p>
-            <p class="description">
+            <p class="hero-section-heading"   data-aos="fade-up"
+            data-aos-duration="4000">Your financial passport</p>
+            <p class="description"  data-aos="fade-up"
+            data-aos-duration="3000">
               Easy multi-currency money management, instant payments, best
               exchange rates. Open a global account now that moves with you
               round the world.
             </p>
-            <div class="button-container">
+            <div class="button-container "  data-aos="fade-up"
+            data-aos-duration="2300">
               <button class="stores-btn">
                 <img src="./images/google-icon.svg" alt="" class="google" />
               </button>
@@ -43,7 +47,8 @@
                 <img src="./images/apple-icon.svg" alt="" class="apple" />
               </button>
             </div>
-            <div class="sponsors">
+            <div class="sponsors"  data-aos="fade-up"
+            data-aos-duration="3000">
               <p>Backed By</p>
               <img src="./images/sponsors.svg" alt="" class="sponsors-img" />
             </div>
@@ -58,18 +63,22 @@
       </section>
       <section class="features-section">
         <div class="features-description">
-          <button class="features-btn">
+          <button class="features-btn"  data-aos="fade-up"
+          data-aos-duration="2000">
             <p class="features-head">Features</p>
           </button>
-          <h1 class="features-header">The Super Financial App</h1>
-          <p class="feats-description">
+          <h1 class="features-header"  data-aos="fade-up"
+          data-aos-duration="3000">The Super Financial App</h1>
+          <p class="feats-description"  data-aos="fade-up"
+          data-aos-duration="3000">
             A multi currency e-wallet that allows you to exchange,
             <br />
             spend and send money at the best possible rates
           </p>
         </div>
 
-        <div class="feature-container">
+        <div class="feature-container"  data-aos="fade-up"
+        data-aos-duration="3000">
           <div class="features-grid1">
             <div class="card card1">
               <div class="card-display">
@@ -100,7 +109,8 @@
               </p>
             </div>
           </div>
-          <div class="features-grid2">
+          <div class="features-grid2"  data-aos="fade-up"
+          data-aos-duration="3000">
             <div class="card card4">
               <div class="card-display">
                 <lottie-interactive path="animation/country-container.json"  interaction="hover" loop class="send-container" id="sendContainer"></lottie-interactive>
@@ -126,11 +136,13 @@
       </section>
       <section class="card-section">
         <div class="card-container">
-          <h1 class="cards-heading">
+          <h1 class="cards-heading "  data-aos="fade-up"
+          data-aos-duration="3000">
             Get a card that <br />
             matches your style
           </h1>
-          <p class="cards-description">
+          <p class="cards-description"  data-aos="fade-up"
+          data-aos-duration="2000">
             Select your style and enjoy a card <br />
             you can brag about.
           </p>
@@ -194,7 +206,7 @@
         © 2023 Maplerad Technologies Inc. All rights reserved.
       </p>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       type="text/javascript"
       src="https://unpkg.com/lottie-interactive@latest/dist/lottie-interactive.js"
@@ -204,6 +216,9 @@
 
     <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
     <script src="./script/app.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- <script>
       LottieInteractivity.create({
           player: "#serviceProvider",

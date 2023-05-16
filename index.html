@@ -15,6 +15,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
+    <div class="loader"><lottie-interactive path="animation/logo-loading.json" autoplay></lottie-interactive></div>            <div class="outside-container"></div>
     <header>
       <nav class="navbar">
         <div class="logo-container">
@@ -219,23 +220,14 @@
     <script>
       AOS.init();
     </script>
-    <!-- <script>
-      LottieInteractivity.create({
-          player: "#serviceProvider",
-          mode:"cursor",
-          actions: [
-              {
-                  position: { x: [0, 1], y: [0, 1] },
-                  type: "loop",
-                  frames: [45, 60]
-              },
-              {
-                  position: { x: -1, y: -1 },
-                  type: 'stop',
-                  frames: [0],
-              }
-          ]
+    <script>
+      var loader = document.querySelector(".loader");
+      window.addEventListener("load", function () {
+        setTimeout(() => {
+          loader.style.display = "none";
+        }, 4000);
+        
       });
-      </script> -->
+      </script>
   </body>
 </html>
